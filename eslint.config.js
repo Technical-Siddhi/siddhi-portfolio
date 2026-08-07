@@ -39,6 +39,7 @@ export default [
         HTMLTextAreaElement: 'readonly',
         MediaQueryListEvent: 'readonly',
         KeyboardEvent: 'readonly',
+        MouseEvent: 'readonly',
         Event: 'readonly',
         React: 'readonly',
       },

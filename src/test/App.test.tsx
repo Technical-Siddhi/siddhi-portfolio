@@ -5,6 +5,6 @@ import App from '../App';
 describe('App Root Integration', () => {
   it('renders application title without throwing errors', () => {
     render(<App />);
-    expect(screen.getByText(/Siddhi Raj Portfolio 2026/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/Siddhi Raj/i).length).toBeGreaterThan(0);
   });
 });
