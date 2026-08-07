@@ -1,0 +1,1 @@
+export const FEATURED_ACHIEVEMENTS_LIMIT = 4;
