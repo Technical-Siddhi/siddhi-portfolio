@@ -10,12 +10,21 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '2rem',
+      padding: {
+        DEFAULT: '1rem',
+        sm: '1.5rem',
+        lg: '2rem',
+        xl: '2.5rem',
+      },
       screens: {
         '2xl': '1400px',
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        heading: ['Plus Jakarta Sans', 'sans-serif'],
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -50,6 +59,19 @@ module.exports = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        brand: {
+          50: '#eef2ff',
+          100: '#e0e7ff',
+          200: '#c7d2fe',
+          300: '#a5b4fc',
+          400: '#818cf8',
+          500: '#6366f1',
+          600: '#4f46e5',
+          700: '#4338ca',
+          800: '#3730a3',
+          900: '#312e81',
+          950: '#1e1b4b',
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -69,11 +91,20 @@ module.exports = {
           '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
           '50%': { opacity: '0.8', transform: 'scale(1.05)' },
         },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        shimmer: {
+          '100%': { transform: 'translateX(100%)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'pulse-glow': 'pulseGlow 4s ease-in-out infinite',
+        float: 'float 6s ease-in-out infinite',
+        shimmer: 'shimmer 2s infinite',
       },
     },
   },

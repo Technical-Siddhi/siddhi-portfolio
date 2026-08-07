@@ -35,8 +35,11 @@ export default [
         HTMLDivElement: 'readonly',
         HTMLHeadingElement: 'readonly',
         HTMLParagraphElement: 'readonly',
+        HTMLInputElement: 'readonly',
+        HTMLTextAreaElement: 'readonly',
         MediaQueryListEvent: 'readonly',
         Event: 'readonly',
+        React: 'readonly',
       },
     },
     plugins: {
@@ -56,6 +59,7 @@ export default [
         { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
       ],
       '@typescript-eslint/no-explicit-any': 'error',
+      '@typescript-eslint/no-empty-object-type': 'off',
     },
   },
 ];

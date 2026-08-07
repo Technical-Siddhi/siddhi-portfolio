@@ -14,7 +14,7 @@ export const SectionContainer = React.forwardRef<HTMLElement, SectionContainerPr
       <section
         id={id}
         ref={ref}
-        className={cn('py-16 md:py-24 relative overflow-hidden', className)}
+        className={cn('py-16 md:py-24 lg:py-32 relative overflow-hidden', className)}
         {...props}
       >
         <div
