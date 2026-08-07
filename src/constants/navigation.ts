@@ -11,6 +11,8 @@ export const NAV_ITEMS: NavItem[] = [
   { id: 'contact', label: 'Contact', href: '#contact' },
 ];
 
+export const RESUME_URL = '/resume.pdf';
+
 export const SITE_METADATA = {
   title: 'Siddhi Raj — Senior Full Stack Engineer & Architect',
   description: 'Enterprise portfolio of Siddhi Raj, Full Stack Engineer specializing in React 18/19, TypeScript, Node.js, and high-performance Web Applications.',

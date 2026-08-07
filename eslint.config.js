@@ -38,6 +38,7 @@ export default [
         HTMLInputElement: 'readonly',
         HTMLTextAreaElement: 'readonly',
         MediaQueryListEvent: 'readonly',
+        KeyboardEvent: 'readonly',
         Event: 'readonly',
         React: 'readonly',
       },
