@@ -20,12 +20,18 @@ export interface Project {
   description: string;
   fullDescription?: string;
   featured: boolean;
+  isPrimaryFlagship?: boolean;
   category: 'Full Stack' | 'Frontend' | 'Backend' | 'AI / Open Source';
   tags: string[];
   thumbnail: string;
   demoUrl?: string;
   githubUrl?: string;
   keyFeatures: string[];
+  problemStatement: string;
+  solution: string;
+  challenges: string[];
+  lessonsLearned: string[];
+  metrics?: { label: string; value: string }[];
 }
 
 export interface SkillCategory {
