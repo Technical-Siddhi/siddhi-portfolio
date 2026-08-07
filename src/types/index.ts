@@ -53,6 +53,17 @@ export interface ExperienceItem {
   technologies: string[];
 }
 
+export interface EducationItem {
+  id: string;
+  degree: string;
+  institution: string;
+  location: string;
+  period: string;
+  grade?: string;
+  highlights: string[];
+  courses: string[];
+}
+
 export interface AchievementItem {
   id: string;
   title: string;

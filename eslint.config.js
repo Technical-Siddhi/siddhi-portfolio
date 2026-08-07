@@ -40,8 +40,10 @@ export default [
         MediaQueryListEvent: 'readonly',
         KeyboardEvent: 'readonly',
         MouseEvent: 'readonly',
+        Element: 'readonly',
         Event: 'readonly',
         React: 'readonly',
+        global: 'readonly',
       },
     },
     plugins: {
