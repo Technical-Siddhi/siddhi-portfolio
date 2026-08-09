@@ -112,6 +112,24 @@
     text-transform: uppercase;
   }
 
+  /* Neon Text Glow & Color Pulse */
+  .neon-text-glow {
+    filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.45)) drop-shadow(0 0 40px rgba(56, 189, 248, 0.3));
+    animation: neonColorPulse 4s ease-in-out infinite alternate;
+  }
+
+  @keyframes neonColorPulse {
+    0% {
+      filter: drop-shadow(0 0 15px rgba(99, 102, 241, 0.4)) drop-shadow(0 0 30px rgba(139, 92, 246, 0.25));
+    }
+    50% {
+      filter: drop-shadow(0 0 25px rgba(139, 92, 246, 0.6)) drop-shadow(0 0 50px rgba(6, 182, 212, 0.45));
+    }
+    100% {
+      filter: drop-shadow(0 0 20px rgba(56, 189, 248, 0.5)) drop-shadow(0 0 40px rgba(168, 85, 247, 0.35));
+    }
+  }
+
   /* Glass System Utilities */
   .glass-card {
     background: var(--glass-bg);
@@ -215,14 +233,6 @@ html.lenis, html.lenis body {
   scroll-behavior: auto !important;
 }
 
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
 .lenis.lenis-stopped {
   overflow: hidden;
-}
-
-.lenis.lenis-scrolling iframe {
-  pointer-events: none;
 }
