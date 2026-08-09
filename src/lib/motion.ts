@@ -79,3 +79,48 @@ export const hoverCardVariants: Variants = {
     transition: { duration: 0.25, ease: 'easeOut' },
   },
 };
+
+/* Phase 1 Motion Foundations & Spring Tokens */
+export const springTransition = {
+  type: 'spring',
+  stiffness: 300,
+  damping: 25,
+};
+
+export const hoverSpring = {
+  type: 'spring',
+  stiffness: 400,
+  damping: 17,
+};
+
+export const textRevealVariants: Variants = {
+  hidden: { y: '100%', opacity: 0 },
+  visible: (i = 0) => ({
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.7,
+      ease: [0.16, 1, 0.3, 1],
+      delay: i * 0.08,
+    },
+  }),
+};
+
+export const tiltCardVariants: Variants = {
+  rest: { rotateX: 0, rotateY: 0, scale: 1 },
+  hover: {
+    scale: 1.02,
+    transition: { duration: 0.3, ease: 'easeOut' },
+  },
+};
+
+export const staggerFast = (delayChildren = 0): Variants => ({
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.06,
+      delayChildren,
+    },
+  },
+});
+

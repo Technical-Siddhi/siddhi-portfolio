@@ -22,8 +22,10 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        display: ['Syne', 'sans-serif'],
         heading: ['Plus Jakarta Sans', 'sans-serif'],
+        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
       },
       colors: {
         border: 'hsl(var(--border))',
@@ -59,6 +61,17 @@ module.exports = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        obsidian: {
+          DEFAULT: '#08090E',
+          surface: '#0D0F18',
+          border: 'rgba(255, 255, 255, 0.08)',
+        },
+        neon: {
+          indigo: '#6366F1',
+          violet: '#8B5CF6',
+          cyan: '#06B6D4',
+          emerald: '#10B981',
+        },
         brand: {
           50: '#eef2ff',
           100: '#e0e7ff',
@@ -72,6 +85,16 @@ module.exports = {
           900: '#312e81',
           950: '#1e1b4b',
         },
+      },
+      boxShadow: {
+        obsidian: '0 12px 40px -10px rgba(0, 0, 0, 0.6)',
+        'glow-indigo': '0 0 25px -5px rgba(99, 102, 241, 0.25)',
+        'glow-violet': '0 0 25px -5px rgba(139, 92, 246, 0.25)',
+        'glow-cyan': '0 0 25px -5px rgba(6, 182, 212, 0.25)',
+      },
+      transitionTimingFunction: {
+        smooth: 'cubic-bezier(0.16, 1, 0.3, 1)',
+        spring: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
       },
       borderRadius: {
         lg: 'var(--radius)',
